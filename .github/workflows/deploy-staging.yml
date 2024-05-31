@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - if: contains(github.event.pull_request.labels.*.name, 'stage')
+        uses: actions/checkout@v4
 
     # # Steps represent a sequence of tasks that will be executed as part of the job
     # steps:
