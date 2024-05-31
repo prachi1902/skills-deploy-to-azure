@@ -18,8 +18,8 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
-
-    if: contains(github.event.pull_request.labels.*.name, 'stage')
+    steps:
+      - if: contains(github.event.pull_request.labels.*.name, 'stage')
 
     # # Steps represent a sequence of tasks that will be executed as part of the job
     # steps:
